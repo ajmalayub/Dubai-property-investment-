@@ -4,12 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dubai Property Investment | High ROI Real Estate</title>
-    <meta name="description" content="Discover high ROI Dubai property investment opportunities. Premium deals in JVC, Motor City & Dubai South.">
+    <meta name="description" content="Discover high ROI Dubai property investment opportunities. Premium deals in JVC, Motor City & Dubai South. Expert guidance for serious investors.">
+    <meta name="keywords" content="Dubai property investment, high ROI, real estate, JVC, Motor City, Dubai South">
+    <meta name="author" content="Dubai Property Investment">
     
     <!-- Open Graph -->
     <meta property="og:title" content="Dubai Property Investment Opportunities">
-    <meta property="og:description" content="High ROI apartments for serious investors in Dubai">
+    <meta property="og:description" content="High ROI apartments for serious investors in Dubai. Get verified deals.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ajmalayub.github.io/Dubai-property-investment-/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1582884921074-940fbb07da5d?w=1200&h=630&fit=crop">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ajmalayub.github.io/Dubai-property-investment-/">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Dubai Property Investment",
+      "url": "https://ajmalayub.github.io/Dubai-property-investment-/",
+      "telephone": "+971553504544",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dubai",
+        "addressCountry": "AE"
+      },
+      "sameAs": [
+        "https://wa.me/971553504544"
+      ]
+    }
+    </script>
     
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -68,6 +94,7 @@
             color: #333;
             transition: color 0.3s;
             font-weight: 500;
+            font-size: 14px;
         }
 
         nav a:hover {
@@ -82,7 +109,9 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.85), rgba(45, 45, 45, 0.85)), url('https://images.unsplash.com/photo-1582884921074-940fbb07da5d?w=1200&h=800&fit=crop');
+            background-size: cover;
+            background-position: center;
             color: #fff;
             padding: 120px 20px;
             text-align: center;
@@ -111,6 +140,7 @@
             margin-bottom: 15px;
             font-weight: 700;
             line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
 
         .hero h1 span {
@@ -119,11 +149,12 @@
 
         .hero p {
             font-size: 20px;
-            opacity: 0.9;
+            opacity: 0.95;
             margin-bottom: 30px;
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
         }
 
         .hero-buttons {
@@ -275,6 +306,18 @@
             text-align: center;
             box-shadow: 0 5px 20px rgba(0,0,0,0.08);
             transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .area-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #25D366, #20ba5a);
         }
 
         .area-card:hover {
@@ -296,6 +339,319 @@
         .area-card p {
             color: #666;
             font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .area-link {
+            color: #25D366;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+        }
+
+        .area-link:hover {
+            gap: 12px;
+        }
+
+        /* Properties Section */
+        .properties {
+            padding: 80px 20px;
+            background: white;
+        }
+
+        .properties-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .property-card {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            background: white;
+        }
+
+        .property-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .property-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .property-content {
+            padding: 25px;
+        }
+
+        .property-price {
+            font-size: 28px;
+            color: #25D366;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .property-title {
+            font-size: 20px;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+        .property-roi {
+            background: #f0f9f5;
+            color: #25D366;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .property-details {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .property-details span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .btn-view {
+            width: 100%;
+            padding: 12px;
+            background: #25D366;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+        }
+
+        .btn-view:hover {
+            background: #20ba5a;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e8f5e9 100%);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 60px;
+            color: #25D366;
+            opacity: 0.3;
+        }
+
+        .stars {
+            color: #ffc107;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .testimonial-text {
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 20px;
+            font-style: italic;
+            line-height: 1.8;
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 5px;
+        }
+
+        .testimonial-role {
+            font-size: 13px;
+            color: #999;
+        }
+
+        /* Blog Section */
+        .blog {
+            padding: 80px 20px;
+            background: white;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .blog-card {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            background: white;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .blog-content {
+            padding: 25px;
+        }
+
+        .blog-date {
+            color: #25D366;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .blog-title {
+            font-size: 18px;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .blog-excerpt {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .blog-link {
+            color: #25D366;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+        }
+
+        .blog-link:hover {
+            gap: 12px;
+        }
+
+        /* ROI Calculator */
+        .calculator {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+        }
+
+        .calculator-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .calculator-container h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+
+        .calculator-container p {
+            text-align: center;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .calculator-input-group {
+            margin-bottom: 25px;
+        }
+
+        .calculator-input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .input-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .calculator-input-group input {
+            flex: 1;
+            padding: 12px 15px;
+            border: 1px solid #444;
+            border-radius: 6px;
+            background: rgba(255,255,255,0.1);
+            color: white;
+            font-size: 14px;
+        }
+
+        .calculator-input-group input::placeholder {
+            color: rgba(255,255,255,0.6);
+        }
+
+        .input-symbol {
+            font-weight: 600;
+        }
+
+        .calculator-result {
+            background: rgba(37, 211, 102, 0.1);
+            border: 2px solid #25D366;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .result-label {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        .result-value {
+            font-size: 36px;
+            font-weight: 700;
+            color: #25D366;
         }
 
         /* Form Section */
@@ -333,7 +689,8 @@
             font-size: 14px;
         }
 
-        .form-group input {
+        .form-group input,
+        .form-group textarea {
             width: 100%;
             padding: 12px 15px;
             border: 1px solid #444;
@@ -342,13 +699,16 @@
             color: white;
             font-size: 14px;
             transition: all 0.3s;
+            font-family: inherit;
         }
 
-        .form-group input::placeholder {
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
             color: rgba(255,255,255,0.6);
         }
 
-        .form-group input:focus {
+        .form-group input:focus,
+        .form-group textarea:focus {
             outline: none;
             background: rgba(255,255,255,0.15);
             border-color: #25D366;
@@ -376,30 +736,67 @@
         footer {
             background: #1a1a1a;
             color: #fff;
-            padding: 40px 20px;
-            text-align: center;
+            padding: 50px 20px 30px;
         }
 
-        footer p {
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            color: #25D366;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
             margin-bottom: 10px;
         }
 
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 14px;
+        }
+
+        .footer-section a:hover {
+            color: #25D366;
+        }
+
+        .footer-section p {
+            color: #ccc;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+        }
+
         .footer-links {
-            margin-top: 20px;
             display: flex;
             justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
+            margin-bottom: 15px;
         }
 
         .footer-links a {
             color: #25D366;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        .footer-links a:hover {
-            text-decoration: underline;
         }
 
         /* Sticky Button */
@@ -468,7 +865,10 @@
             }
 
             .features-grid,
-            .areas-grid {
+            .areas-grid,
+            .properties-grid,
+            .testimonials-grid,
+            .blog-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -479,6 +879,10 @@
             .stats,
             .why-us,
             .areas,
+            .properties,
+            .testimonials,
+            .blog,
+            .calculator,
             .form-section {
                 padding: 60px 20px;
             }
@@ -487,6 +891,11 @@
                 width: 55px;
                 height: 55px;
                 font-size: 24px;
+            }
+
+            .input-wrapper {
+                flex-direction: column;
+                align-items: flex-start;
             }
         }
     </style>
@@ -500,6 +909,10 @@
             <ul>
                 <li><a href="#features">Why Us</a></li>
                 <li><a href="#areas">Areas</a></li>
+                <li><a href="#properties">Properties</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#calculator">Calculator</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="menu-toggle"><i class="fas fa-bars"></i></button>
@@ -592,22 +1005,197 @@
                     <div class="area-icon">🏢</div>
                     <h3>Jumeirah Village Circle</h3>
                     <p>Premium residential community with strong rental demand and capital appreciation</p>
+                    <a href="https://wa.me/971553504544" class="area-link">View Deals <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="area-card">
                     <div class="area-icon">🚗</div>
                     <h3>Motor City</h3>
                     <p>Affordable properties with high occupancy rates and steady returns</p>
+                    <a href="https://wa.me/971553504544" class="area-link">View Deals <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="area-card">
                     <div class="area-icon">🏗️</div>
                     <h3>Dubai South</h3>
                     <p>Emerging area with strong growth potential and lower entry prices</p>
+                    <a href="https://wa.me/971553504544" class="area-link">View Deals <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="area-card">
                     <div class="area-icon">💼</div>
                     <h3>Business Bay</h3>
                     <p>Select premium deals in prime business and lifestyle hub</p>
+                    <a href="https://wa.me/971553504544" class="area-link">View Deals <i class="fas fa-arrow-right"></i></a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Showcase -->
+    <section class="properties" id="properties">
+        <div class="container">
+            <h2 class="section-title">Featured Properties</h2>
+            <div class="properties-grid">
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop" alt="Luxury Apartment in JVC" class="property-image">
+                    <div class="property-content">
+                        <div class="property-price">AED 450,000</div>
+                        <h3 class="property-title">Studio - JVC</h3>
+                        <div class="property-roi">7.5% Annual ROI</div>
+                        <div class="property-details">
+                            <span><i class="fas fa-ruler-combined"></i> 400 sqft</span>
+                            <span><i class="fas fa-door-open"></i> Studio</span>
+                        </div>
+                        <a href="https://wa.me/971553504544" class="btn-view">Inquire Now</a>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=300&fit=crop" alt="Modern Apartment in Motor City" class="property-image">
+                    <div class="property-content">
+                        <div class="property-price">AED 650,000</div>
+                        <h3 class="property-title">1 BR - Motor City</h3>
+                        <div class="property-roi">7% Annual ROI</div>
+                        <div class="property-details">
+                            <span><i class="fas fa-ruler-combined"></i> 700 sqft</span>
+                            <span><i class="fas fa-door-open"></i> 1 Bedroom</span>
+                        </div>
+                        <a href="https://wa.me/971553504544" class="btn-view">Inquire Now</a>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9b41b20a9c19?w=400&h=300&fit=crop" alt="Spacious Apartment in Dubai South" class="property-image">
+                    <div class="property-content">
+                        <div class="property-price">AED 550,000</div>
+                        <h3 class="property-title">1 BR - Dubai South</h3>
+                        <div class="property-roi">8% Annual ROI</div>
+                        <div class="property-details">
+                            <span><i class="fas fa-ruler-combined"></i> 750 sqft</span>
+                            <span><i class="fas fa-door-open"></i> 1 Bedroom</span>
+                        </div>
+                        <a href="https://wa.me/971553504544" class="btn-view">Inquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Investors Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Amazing service! They found me the perfect investment property with consistent returns. The transparency and support were exceptional.</p>
+                    <div class="testimonial-author">Ahmed Al-Mansouri</div>
+                    <div class="testimonial-role">Property Investor</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Professional team that understands the investment market. My portfolio has grown significantly thanks to their expert guidance and vetted deals.</p>
+                    <div class="testimonial-author">Sarah Johnson</div>
+                    <div class="testimonial-role">International Investor</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Best decision I made! The properties are carefully selected, ROI is consistent, and the team is always responsive to my concerns. Highly recommended!</p>
+                    <div class="testimonial-author">Mohammed Ibrahim</div>
+                    <div class="testimonial-role">Real Estate Developer</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <h2 class="section-title">Investment Insights & News</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1554224311-beee415c15c7?w=400&h=250&fit=crop" alt="Dubai Real Estate Market Trends" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">April 22, 2026</div>
+                        <h3 class="blog-title">Dubai Real Estate Market Trends 2026</h3>
+                        <p class="blog-excerpt">Explore the latest market trends, investment opportunities, and forecasts for Dubai's real estate sector in 2026.</p>
+                        <a href="https://wa.me/971553504544" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1465056836ba35d37dbd109a3ce2ebf32cf808080?w=400&h=250&fit=crop" alt="How to Calculate ROI on Rental Properties" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">April 18, 2026</div>
+                        <h3 class="blog-title">How to Calculate ROI on Rental Properties</h3>
+                        <p class="blog-excerpt">A comprehensive guide to understanding and calculating return on investment for your Dubai property investments.</p>
+                        <a href="https://wa.me/971553504544" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1460925895917-adf4e565db18?w=400&h=250&fit=crop" alt="First Time Investor Guide" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">April 15, 2026</div>
+                        <h3 class="blog-title">First Time Investor Guide to Dubai Real Estate</h3>
+                        <p class="blog-excerpt">Everything you need to know before making your first property investment in Dubai. A beginner's handbook.</p>
+                        <a href="https://wa.me/971553504544" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Calculator -->
+    <section class="calculator" id="calculator">
+        <div class="calculator-container">
+            <h2>ROI Calculator</h2>
+            <p>Calculate your potential returns on your investment</p>
+
+            <div class="calculator-input-group">
+                <label>Property Price (AED)</label>
+                <div class="input-wrapper">
+                    <span class="input-symbol">د.إ</span>
+                    <input type="number" id="propertyPrice" placeholder="e.g., 500000" value="500000">
+                </div>
+            </div>
+
+            <div class="calculator-input-group">
+                <label>Expected Annual ROI (%)</label>
+                <div class="input-wrapper">
+                    <input type="number" id="roiRate" placeholder="e.g., 7" value="7" step="0.1">
+                    <span class="input-symbol">%</span>
+                </div>
+            </div>
+
+            <div class="calculator-input-group">
+                <label>Years</label>
+                <div class="input-wrapper">
+                    <input type="number" id="years" placeholder="e.g., 5" value="5" min="1" max="30">
+                </div>
+            </div>
+
+            <div class="calculator-result">
+                <div class="result-label">Total ROI Over Selected Period</div>
+                <div class="result-value" id="result">د.إ 175,000</div>
             </div>
         </div>
     </section>
@@ -620,15 +1208,23 @@
             <form onsubmit="event.preventDefault(); handleSubmit();">
                 <div class="form-group">
                     <label>Full Name *</label>
-                    <input type="text" placeholder="Your name" required>
+                    <input type="text" id="name" placeholder="Your name" required>
                 </div>
                 <div class="form-group">
                     <label>Email *</label>
-                    <input type="email" placeholder="your@email.com" required>
+                    <input type="email" id="email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone *</label>
+                    <input type="tel" id="phone" placeholder="+971 50 xxxxxxx" required>
                 </div>
                 <div class="form-group">
                     <label>Budget (AED) *</label>
-                    <input type="text" placeholder="e.g., 500,000" required>
+                    <input type="text" id="budget" placeholder="e.g., 500,000" required>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea id="message" placeholder="Tell us about your investment goals..." rows="4"></textarea>
                 </div>
                 <div class="form-group">
                     <button type="submit">Request Investment Deals</button>
@@ -639,12 +1235,44 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Dubai Property Investment. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="https://wa.me/971553504544">WhatsApp</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Disclaimer</a>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Dubai Property Investment specializes in high-ROI real estate opportunities for serious investors. We provide verified deals with transparent returns.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#features">Why Choose Us</a></li>
+                    <li><a href="#properties">Featured Properties</a></li>
+                    <li><a href="#blog">Investment Blog</a></li>
+                    <li><a href="#calculator">ROI Calculator</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Investment Areas</h3>
+                <ul>
+                    <li><a href="#areas">Jumeirah Village Circle</a></li>
+                    <li><a href="#areas">Motor City</a></li>
+                    <li><a href="#areas">Dubai South</a></li>
+                    <li><a href="#areas">Business Bay</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><strong>WhatsApp:</strong> <a href="https://wa.me/971553504544">+971 55 350 4544</a></p>
+                <p><strong>Location:</strong> Dubai, UAE</p>
+                <p><strong>Available:</strong> 24/7 Support</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+                <a href="disclaimer.html">Disclaimer</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+            <p>&copy; 2026 Dubai Property Investment. All rights reserved.</p>
         </div>
     </footer>
 
@@ -654,13 +1282,37 @@
     </a>
 
     <script>
-        function handleSubmit() {
-            const name = document.querySelector('input[placeholder="Your name"]').value;
-            const email = document.querySelector('input[placeholder="your@email.com"]').value;
-            const budget = document.querySelector('input[placeholder="e.g., 500,000"]').value;
+        // ROI Calculator
+        function calculateROI() {
+            const propertyPrice = parseFloat(document.getElementById('propertyPrice').value) || 0;
+            const roiRate = parseFloat(document.getElementById('roiRate').value) || 0;
+            const years = parseInt(document.getElementById('years').value) || 1;
+
+            const totalROI = propertyPrice * (roiRate / 100) * years;
             
-            const message = `Hi! I'm interested in Dubai property investments.%0AName: ${name}%0AEmail: ${email}%0ABudget: ${budget} AED`;
-            window.open(`https://wa.me/971553504544?text=${message}`, '_blank');
+            document.getElementById('result').textContent = 'د.إ ' + totalROI.toLocaleString('en-US', {
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
+            });
+        }
+
+        document.getElementById('propertyPrice').addEventListener('input', calculateROI);
+        document.getElementById('roiRate').addEventListener('input', calculateROI);
+        document.getElementById('years').addEventListener('input', calculateROI);
+
+        // Initial calculation
+        calculateROI();
+
+        // Form submission
+        function handleSubmit() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const budget = document.getElementById('budget').value;
+            const message = document.getElementById('message').value;
+            
+            const whatsappMessage = `Hi! I'm interested in Dubai property investments.%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0ABudget: ${budget} AED%0AMessage: ${message}`;
+            window.open(`https://wa.me/971553504544?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
         }
     </script>
 </body>
